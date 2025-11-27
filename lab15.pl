@@ -25,17 +25,18 @@ dances(X) :- happy(X), with_albert(X).
 % CODE: rule if alice dances AND write('Alice is happy and with Albert so she dances')
 %       then does_alice_dance 
 %       Do not forget the period
-does_alice_dance :- dances(alice),  write('Alice is happy and with Albert so she dances').
+%does_alice_dance :- complete rest,  write('Alice is happy and with Albert so she dances').
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % Query 2: In main, we test whether does_alice_test by invoking it 
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+does_alice_dance :- dances(alice),  write('Alice is happy and with Albert so she dances').
 % CODE: Add a fact that bob is near water
+% write your code here
 near_water(bob).
 % CODE: a rule if X is happy and near water then X swims 
 %       a comma is used for and 
-
-swims(X) :- happy(X), near_water(X).
+% write your code here
+swims(X):- happy(X), near_water(X).
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % Query 3: In main, the code tests if bob swims 
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
